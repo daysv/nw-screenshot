@@ -1,0 +1,16 @@
+{
+  "main": "index.html",
+  "name": "eimpc",
+  "author": "sang",
+  "description": "nw screenshot demo",
+  "window": {
+    "title": "demo",
+    "frame": true,
+    "width": 800,
+    "height": 600,
+    "show": true,
+    "position": "center",
+    "min_width": 800,
+    "min_height": 600
+  }
+}

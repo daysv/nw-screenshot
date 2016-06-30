@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>screenshot</title>
+    <link rel="stylesheet" href="./drawingboard.css">
+    <style>
+        @font-face {
+            font-family: 'FontAwesome';
+            src: url('./fontawesome-webfont.woff2') format('woff2');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        html, body, #gray_layout {
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0);
+        }
+
+        body {
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            font-family: FontAwesome;
+        }
+
+        #gray_layout, #board {
+            position: absolute;
+        }
+
+        #tmp, audio {
+            display: none;
+        }
+
+        #recordFile {
+            display: none;
+        }
+
+    </style>
+</head>
+<body>
+<canvas id="gray_layout"></canvas>
+<div id="board"></div>
+<canvas id="tmp"></canvas>
+<input id="recordFile" type="file" nwsaveas accept=".jpg"/>
+</body>
+<script src="jquery.js"></script>
+<script src="drawingboard.js"></script>
+<script src="screenshot.js"></script>
+</html>
