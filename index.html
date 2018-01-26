@@ -6,13 +6,14 @@
 </head>
 <body>
 <button onclick="start()">capture</button>
+<img id="img" src="" alt="">
 </body>
 <script src="./src/index.js"></script>
 <script>
-    function start() {
-        screenshot(function (err, data) {
-            console.log('data: ', data)
-        })
-    }
+  function start() {
+    screenshot(function (err, data) {
+      document.getElementById('img').setAttribute('src', 'data:image/jpeg;base64,' + data);
+    })
+  }
 </script>
 </html>
